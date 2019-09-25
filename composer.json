@@ -1,0 +1,14 @@
+{
+    "name": "simple-solution/wp-theme-boilerplate",
+    "description": "Theme for WP Boilerplate 2.0",
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vyacheslav Naumenko",
+            "email": "vna@sso-dev.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
