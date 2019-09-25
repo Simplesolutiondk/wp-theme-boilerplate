@@ -1,0 +1,102 @@
+.checkout-form {
+  > div {
+    margin-bottom: $margin-xtra-small;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.steps {
+      border: solid 1px var(--white-two);
+      padding: 20px;
+      .steps-title {
+        display: flex;
+        height: 2rem;
+        align-items: center;
+        text-transform: uppercase;
+        strong {
+          margin-right: 10px;
+          padding: 0 .5rem;
+          background-color: var(--greyish-blue);
+          color: #fff;
+          height: 2rem;
+          line-height: 2rem;
+          font-weight: bold;
+        }
+        span.pull-right {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+
+.CredentialsForm {
+  .payment-address, .delivery-address {
+    background-color: var(--white-three);
+    padding: 15px 7.5px 0 7.5px;
+    margin: 0;
+    margin-bottom: 20px;
+    .sm-6-cl {
+      padding-right: 7.5px;
+      padding-left: 7.5px;
+    }
+    .form-group {
+      .form-control {
+        margin-bottom: 15px;
+        &.error {
+          border-color: var(--warm-grey);
+        }
+      }
+      .validation {
+        font-size: .75rem;
+        margin-top: -10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .delivery-address {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  .collapsed-delivery {
+    label {
+      text-transform: uppercase;
+    }
+  }
+}
+.ShipmentForm, .Payment {
+  &-item {
+    background-color: var(--white-three);
+    padding: 15px;
+    margin: 0;
+    + &-item {
+      padding-top: 0;
+    }
+    &.active {
+      label {
+        background-color: var(--white-two);
+      }
+    }
+    label {
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      padding: 7.5px;
+      align-items: center;
+      input {
+        margin: 7.5px;
+      }
+      .logo {
+        margin: 7.5px;
+        .payment-logo {
+          height: 30px;
+        }
+      }
+      .details {
+        margin: 7.5px;
+      }
+      .price {
+        margin: 7.5px 7.5px 7.5px auto;
+      }
+    }
+  }
+}

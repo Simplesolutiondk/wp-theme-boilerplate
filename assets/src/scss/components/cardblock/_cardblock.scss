@@ -1,0 +1,84 @@
+.card-block {
+  &-item {
+    height: 100%;
+    margin-bottom: $margin-xtra-small;
+
+    &-image {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      font-family: 'object-fit: cover; object-position: center;';
+      display: block;
+    }
+
+    &-inner {
+      border: solid 1px var(--white-two);
+      background-color: var(--white);
+      height: max-content;
+      padding: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-between;
+
+      .btn {
+        text-transform: none;
+      }
+    }
+
+    &-description {
+      margin: 50px 0;
+      width: 100%;
+      height: 150px;
+      min-height: 150px;
+
+      p {
+        margin: 0 !important;
+      }
+    }
+
+    &-title {
+      text-align: center;
+      color: var(--black);
+      font-size: 25px;
+      line-height: 1.2;
+      min-height: 60px;
+      height: max-content;
+      font-family: raleway-reg, 'sans-serif';
+    }
+
+    &-title-diff {
+      text-align: center;
+      color: var(--black);
+      font-size: 25px;
+      line-height: 1.2;
+      height: max-content;
+      font-family: raleway-reg, 'sans-serif';
+    }
+
+    p {
+      margin: $margin-small 0;
+      color: var(--warm-grey);
+      font-size: 16px;
+      min-height: 145px;
+      max-height: 195px;
+      font-family: raleway-reg, 'sans-serif';
+
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      line-height: 25px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+
+    a {
+      font-size: 16px;
+      padding: 13px 37px;
+      font-family: raleway-bold, 'sans-serif';
+    }
+  }
+}

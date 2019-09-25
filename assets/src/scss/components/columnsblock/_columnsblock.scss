@@ -1,0 +1,32 @@
+.single-post {
+  @media (min-width: 600px) {
+    .wp-block-column {
+      flex-basis: calc(50% - 16px);
+      flex-grow: 0;
+    }
+
+    .wp-block-image {
+      margin: $margin-small 0;
+      figcaption {
+        text-align: left;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.71;
+        margin-top: 0;
+      }
+    }
+  }
+}
+.page {
+  @media (min-width: 600px) {
+    .wp-block-column {
+      margin-bottom: 0;
+    }
+  }
+}
+.wp-block-image {
+  figcaption {
+    font-style: italic;
+  }
+}

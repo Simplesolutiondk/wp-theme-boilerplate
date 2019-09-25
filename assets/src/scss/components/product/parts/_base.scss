@@ -1,0 +1,53 @@
+.product-list-block {
+  @include make-col-ready();
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(12);
+  }
+
+  .header {
+    margin-bottom: 80px;
+    margin-top: 180px;
+
+    > h2 {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      font-family: raleway-medium, 'sans-serif';
+      font-size: 40px;
+      color: var(--dark-blue-grey);
+      margin-bottom: $margin-xtra-small;
+
+      &:after {
+        @extend .border--primary;
+      }
+    }
+
+    > h4 {
+      font-family: opensans-reg, "sans-serif";
+      font-size: 30px;
+      text-align: center;
+      color: var(--silver);
+      margin-bottom: 0;
+    }
+  }
+
+  .products {
+    display: flex;
+    list-style-type: none;
+    background-color: var(--white-three);
+    padding: 30px 15px 0 15px;
+
+    .product {
+      margin-bottom: 30px;
+
+      > a {
+        display: block;
+        background-color: var(--white);
+        button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

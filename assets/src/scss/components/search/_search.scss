@@ -1,0 +1,28 @@
+.app-search {
+  @import "parts/dropdown";
+  .search-button-wrapper {
+    cursor: pointer;
+    span {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      @media (min-width: $tablet) {
+        padding: 15px 25px;
+      }
+      border-right: 1px solid var(--white-four);
+      height: 46px;
+    }
+    .ico {
+      font-size: 16px;
+      color: var(--warm-grey);
+      border: none;
+
+      &:hover{
+        color: var(--greyish-blue);
+      }
+    }
+  }
+
+}

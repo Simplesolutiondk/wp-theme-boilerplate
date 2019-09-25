@@ -1,0 +1,84 @@
+.wp-block-cgb-block-sso-gravityforms-wrapper  {
+  margin-bottom: 50px;
+  .gform_wrapper {
+    background-color: var(--white-three) !important;
+    padding: 60px 45px !important;
+    form {
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      .gform {
+        &_heading {
+          margin-bottom: 50px;
+          opacity: 0.8;
+          .gform_title {
+            display: inline-block;
+            font-size: 25px;
+            line-height: 35px;
+            font-family: opensans-bold, sans-serif;
+            color: var(--dark-blue-grey-80);
+          }
+          .gform_description {
+            display: inline-block;
+            color: var(--greyish-blue-80);
+            font-size: 20px;
+            line-height: 1.75;
+            margin-bottom: 0;
+            margin-left: 10px;
+            &:before {
+              content: '-';
+              padding-right: 10px;
+            }
+          }
+        }
+        &_body {
+          .gform_fields {
+            margin: 0 -10px;
+            display: flex;
+            flex-wrap: wrap;
+            .col-6 {
+              padding: 0 10px;
+              flex: 0 0 50%;
+              max-width: 50%;
+            }
+            .col-12 {
+              padding: 0 10px;
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
+          }
+          .ginput_container {
+            input, textarea {
+              border-color: var(--silver);;
+              margin-bottom: 20px;
+              font-size: 18px;
+              color: var(--warm-grey);
+              padding: 15px 20px 13px;
+              font-family: opensans-reg, 'sans-serif';
+            }
+            textarea {
+              height: 100px;
+            }
+          }
+        }
+        &_footer {
+          text-align: right;
+          input[type=submit] {
+            width: auto;
+            font-size: 15px;
+            font-family: raleway-bold, sans-serif;
+          }
+        }
+      }
+    }
+  }
+  &.wrapper-oneline .gform_wrapper form .gform_body .gform_fields .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  &.wrapper-fluid {
+    width: 100vw;
+    margin-left: calc(calc(100vw - 100%) / -2);
+    margin-right: calc(calc(100vw - 100%) / -2);
+  }
+}

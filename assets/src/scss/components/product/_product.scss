@@ -1,0 +1,10 @@
+.product {
+  @import "parts/upsells";
+  @import "parts/variants";
+  @import "parts/accessories";
+  @import "parts/related";
+  @import "parts/content";
+  @import "parts/details";
+  @import "parts/widget";
+  @import "parts/base";
+}

@@ -1,0 +1,245 @@
+@import "vendors/bootstrap/grid";
+
+.grid-l {
+  flex: 0 90%;
+  max-width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.grid-m {
+  display: flex;
+  flex: 0 80%;
+  margin: auto;
+}
+
+.grid-row {
+  @include make-row();
+}
+
+.grid-container-narrow {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .grid-container-narrow {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container-narrow {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container-narrow {
+    max-width: 960px;
+  }
+}
+
+.grid-container {
+  @include make-container();
+  @include make-container-max-widths;
+}
+
+.grid-container-fluid {
+  @include make-container();
+}
+
+// XtraSmall / Auto
+.xs-2-cl {
+  @include make-col-ready();
+  @include make-col(4);
+}
+
+.xs-4-cl {
+  @include make-col-ready();
+  @include make-col(4);
+}
+
+.xs-6-cl {
+  @include make-col-ready();
+  @include make-col(6);
+}
+
+.xs-8-cl {
+  @include make-col-ready();
+  @include make-col(8);
+}
+
+.xs-12-cl {
+  @include make-col-ready();
+  @include make-col(12);
+}
+
+// Small
+.sm-2-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(sm) {
+    @include make-col(3);
+  }
+}
+
+.sm-3-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(sm) {
+    @include make-col(3);
+  }
+}
+
+.sm-4-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(sm) {
+    @include make-col(4);
+  }
+}
+
+.sm-6-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+  }
+}
+
+.sm-9-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(sm) {
+    @include make-col(9);
+  }
+}
+
+.sm-12-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(sm) {
+    @include make-col(12);
+  }
+}
+
+// Large
+.lg-2-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(2);
+  }
+}
+
+.lg-3-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(3);
+  }
+}
+
+.lg-4-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+  }
+}
+
+.lg-5-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(5);
+  }
+}
+
+.lg-6-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }
+}
+
+.lg-7-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(7);
+  }
+}
+
+.lg-8-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
+  }
+}
+
+.lg-12-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(12);
+  }
+}
+
+.xl-5-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(xl) {
+    @include make-col(5);
+  }
+}
+
+.xl-7-cl {
+  @include make-col-ready();
+  @include media-breakpoint-up(xl) {
+    @include make-col(7);
+  }
+}
+
+.no-gutters {
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.v-middle {
+  height: 100%;
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.center-b {
+  align-items: center;
+  justify-content: center;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,23 @@
+.button {
+  @extend .btn;
+  @extend .btn--secondary;
+}
+
+.product-content-right {
+  .product_title {
+    @extend .heading--product-title;
+    margin-bottom: $margin;
+    font-family: raleway-medium, 'sans-serif';
+  }
+}
+
+.product-wrapper-react-mounts {
+  background-color: var(--white-three);
+  padding: $margin-xtra-small;
+}
+
+@media (max-width: $mobile) {
+  .product_title {
+    margin-top: 30px;
+  }
+}

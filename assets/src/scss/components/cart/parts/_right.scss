@@ -1,0 +1,149 @@
+.right {
+  position: sticky;
+  top: 3vh;
+  background-color: var(--white-three);
+  padding: 35px;
+  border-right: 5px solid var(--greyish-blue);
+  .app-cart-productform  {
+    .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .count {
+        margin-left: 10px;
+        padding: 0 .5rem;
+        background-color: var(--greyish-blue);
+        color: #fff;
+        height: 2rem;
+        line-height: 2rem;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+    .product-item-wrapper {
+
+      .product-item {
+        position: relative;
+        display: flex;
+        background-color: #fff;
+        margin-bottom: 15px;
+        align-items: center;
+        .image {
+          flex: 0 0 100px;
+          margin-right: 15px;
+          height: 100px;
+          img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: center;
+            font-family: 'object-fit: cover; object-position: center;';
+          }
+        }
+        .remove {
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          width: 12px;
+          height: 12px;
+          text-align: center;
+          color: var(--slate-green);
+          line-height: 12px;
+          font-size: 12px;
+          cursor: pointer;
+          transition: all 0.25s ease;
+        }
+
+        .handle {
+          padding: 15px 15px 15px 0;
+          width: 100%;
+          .name {
+            margin-bottom: 10px;
+          }
+          &-sub {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .quantity {
+              display: flex;
+              align-items: center;
+              span {
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                background-color: var(--white-three);
+                cursor: pointer;
+                display: block;
+              }
+              input {
+                width: 75px;
+                margin: 0;
+                border: 1px solid var(--white-four);
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                padding: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .OrderSummary {
+    margin-bottom: 25px;
+    .total-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .price {
+        margin-left: 15px;
+      }
+    }
+  }
+  .OptForm {
+    margin-bottom: 25px;
+    #note {
+      .expandingdivs {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+      }
+      input {
+        margin-bottom: 15px;
+      }
+    }
+    #options {
+      @extend .custom-checkbox;
+      input {
+        margin-right: 15px;
+      }
+      .validation {
+        margin-top: .5rem;
+
+      }
+    }
+  }
+  .ButtonForm {
+    #confirm {
+      width: 100%;
+    }
+    .security-text {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+

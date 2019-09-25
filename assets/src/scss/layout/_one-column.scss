@@ -1,0 +1,100 @@
+.div-center {
+
+    .heading-block-wrapper {
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        margin: 100px auto;
+        max-width: none;
+    }
+
+    .one-column {
+        max-width: 650px;
+        margin: 0 auto;
+
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--greyish-blue);
+        }
+        figure{
+            margin-bottom: 4em;
+
+            img {
+                max-width: 500px;
+                max-height: 500px;
+                object-fit: cover;
+                font-family: 'object-fit: cover;';
+            }
+            figcaption {
+                text-align: left;
+            }
+        }
+        > p {
+            margin-bottom: 5%;
+        }
+        > ul {
+            margin-bottom: 10%;
+            list-style: none;
+
+            li {
+                font-size: 14px;
+                margin-left: 1rem;
+            }
+
+            li::before {
+                content: "\25CF";
+                color: var(--greyish-blue);
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+                font-size: 1rem;
+            }
+        }
+        p, li {
+            color: var(--warm-grey);
+        }
+        > .wp-block-cgb-block-sso-large-checkmark-section {
+            margin-top: 50px;
+
+            &.small-checkbox {
+                padding-left: 60px;
+                padding-right: 75px;
+
+                h3 {
+                    font-size: 30px !important;
+                    margin-bottom: 15px;
+                }
+            }
+            .wp-block-column {
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 20px !important;
+                }
+                &:last-child {
+                    text-align: right;
+                }
+            }
+
+            .wp-block-button {
+                margin-left: auto;
+                width: 300px;
+                height: 55px;
+                a {
+                    font-size: 14px;
+                    width: 100%;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+
+    .wp-block-cgb-block-sso-grid-view {
+        h4 {
+            font-size: 18px;
+            font-family: opensans-bold, 'sans-serif';
+        }
+    }
+}

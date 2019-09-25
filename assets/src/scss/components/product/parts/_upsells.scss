@@ -1,0 +1,18 @@
+.upsells {
+  @extend .product-list-block;
+
+  > h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: raleway-medium, 'sans-serif';
+    font-size: 40px;
+    color: var(--dark-blue-grey);
+    margin-top: 180px;
+    margin-bottom: 80px;
+
+    &:after {
+      @extend .border--primary;
+    }
+  }
+}

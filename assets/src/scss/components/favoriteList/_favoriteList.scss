@@ -1,0 +1,159 @@
+// Button for products overview page (Product-card)
+.add-to-favorit-btn {
+    border: 0;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    display: block;
+    line-height: 12px;
+    &:hover {
+        background-color: var(--white-four);
+    }
+}
+
+// Button for Product-detail page
+.add-to-favorit-btn-product {
+    background-color: #fff;
+    border: 1px solid var(--greyish-blue);
+    height: 38px;
+    width: 38px;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--white-four);
+    }
+
+    path {
+        color: var(--dark-blue-grey);
+    }
+}
+
+// Side-button for showing the favorit sidebar list
+.favorit-sidebar-btn {
+    position: fixed;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 1;
+    right: 0;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+    background-color: var(--greyish-blue);
+    cursor: pointer;
+    transition: ease all .3s;
+    line-height: 50px;
+    font-size: 2em;
+    &:after {
+        line-height: 2 !important;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &:hover {
+       background-color: var(--dark-blue-grey);
+    }
+}
+
+// Tab for favoritlist (Shown on all pages)
+.favoritlist-wrapper {
+    z-index: 1;
+    background-color: var(--white-three);
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    transition: right .5s, opacity .5s;
+    right: -400px;
+    opacity: 0;
+    &.show {
+        right: 0;
+        opacity: 1;
+    }
+    .favoritlist-close {
+        cursor: pointer;
+        background-color: var(--greyish-blue);
+        color: #fff;
+        font-size: 1rem;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        position: absolute;
+        margin-left: -40px;
+        margin-top: 15px;
+        padding: 7px;
+        display: block;
+        &:hover {
+            background-color: var(--dark-blue-grey);
+            color: #fff;
+        }
+    }
+    .favoritlist-grid {
+        padding: 15px;
+        .favoritlist-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 15px;
+            .favoritlist-title {
+                line-height: 30px;
+            }
+        }
+        .favoritlist-mid {
+            &-no-products {
+                padding: 10%;
+                text-align: center;
+            }
+
+            .favorit-card {
+                margin-bottom: 10px;
+                background-color: #fff;
+                position: relative;
+                height: 75px;
+                &:hover {
+                    background-color: var(--white-four);
+                }
+                img {
+                    height: 75px;
+                    width: 75px;
+                }
+                .remove-card {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    width: 12px;
+                    height: 12px;
+                    text-align: center;
+                    color: var(--slate-green);
+                    line-height: 12px;
+                    font-size: 12px;
+                    cursor: pointer;
+                    transition: all 0.25s ease;
+                    &:hover {
+                        color: var(--black);
+                    }
+                }
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .favorit-card-content {
+                        padding: 15px 25px 15px 15px;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}

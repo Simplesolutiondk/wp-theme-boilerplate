@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  overflow-x: hidden;
+  font-family: opensans-reg, 'sans-serif';
+  font-weight: 300;
+  background-color: var(--white);
+}
+
+html {
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--faded-blue);
+  text-decoration: none;
+  transition: all 0.25s ease;
+
+  &:hover {
+    color: var(--dark-blue-grey);
+  }
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}

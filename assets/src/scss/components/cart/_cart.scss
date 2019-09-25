@@ -1,0 +1,13 @@
+.app-cart {
+  @import "parts/steps";
+  @import "parts/right";
+
+  .empty-cart{
+    text-align: center;
+  }
+  
+  .continue-shopping {
+    text-align: center;
+    margin-top: 1%;
+  }
+}

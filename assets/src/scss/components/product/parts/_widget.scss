@@ -1,0 +1,70 @@
+.product-widget {
+  background-color: var(--white-three);
+  border-left: 5px solid var(--greyish-blue);
+  color: var(--dark-blue-grey);
+  padding: 35px;
+  @extend .sticky;
+  .contact-info-header {
+    margin-bottom: 30px;
+
+    h3 {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 1.33;
+      font-family: raleway-medium, sans-serif;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-family: raleway-reg, sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.88;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--dark-blue-grey);
+    }
+  }
+  .contact-info-details {
+    margin-bottom: 80px;
+
+    p {
+      width: 313px;
+      font-family: opensans-reg, sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.88;
+      letter-spacing: normal;
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    .detail-info-phone {
+      margin-left: 10px;
+    }
+    .detail-info-email {
+      margin-left: 25px;
+    }
+  }
+
+  .gfield_select {
+    margin: 60px 0 0 0;
+    border: 1px solid var(--silver);
+    border-radius: 2px;
+    height: 35px;
+    padding: 0 0 0 10px;
+    color: var(--silver);
+    font-size: 14px;
+    font-family: raleway-medium, sans-sarif;
+
+    option {
+      color: var(--silver);
+      font-size: 14px;
+      font-family: raleway-medium, sans-sarif;
+    }
+  }
+}

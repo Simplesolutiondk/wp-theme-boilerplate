@@ -1,0 +1,64 @@
+#main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  @extend .box-shadow--primary;
+
+  #top-menu {
+    .custom-logo {
+      $widthImg: 300;
+      $heightImg: 81;
+      $ratio: $widthImg/$heightImg;
+      height: 35px;
+      vertical-align: middle;
+      width: (35px * $ratio);
+      @media (min-width: $mobile) {
+        height: 50px;
+        width: (50px * $ratio);
+      }
+    }
+
+    .cta-button-header {
+      width: 150px;
+      margin-left: 1rem;
+      .btn {
+        width: 100%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-family: opensans-bold, 'sans-serif';
+        @media (max-width: $mobile) {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+#checkout-header {
+  padding: 50px 0;
+  .logo {
+    a {
+      img {
+        height: 50px;
+        width: 170px;
+      }
+    }
+  }
+  .checkout-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet) {
+  #main-header {
+    #service-menu {
+      .logo-area {
+        width: 228px;
+      }
+    }
+  }
+}

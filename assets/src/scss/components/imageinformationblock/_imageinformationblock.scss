@@ -1,0 +1,32 @@
+.wp-block-cgb-block-sso-image-information {
+  text-align: center;
+
+  .image-info {
+    &-separator {
+      border: 3px solid var(--greyish-blue);
+      margin: 100px 0;
+    }
+
+    &-img {
+      width: 291px;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: $margin-small;
+      font-family: 'object-fit: cover;';
+    }
+
+    &-description {
+      font-family: raleway-reg, "sans-serif";
+      font-size: 20px;
+      font-style: normal;
+      line-height: 1.5;
+      color: var(--dark-blue-grey);
+
+      > a {
+        color: var(--azure);
+        text-decoration: underline;
+        font-family: raleway-reg, "sans-serif";
+      }
+    }
+  }
+}

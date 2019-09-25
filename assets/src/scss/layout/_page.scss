@@ -1,0 +1,10 @@
+#wrapper {
+  margin-top: $margin-xtra-small;
+  margin-bottom: calc(#{$margin-medium} / 2);
+}
+
+@media (min-width: $tablet) {
+  #wrapper {
+    margin-bottom: $margin-medium;
+  }
+}

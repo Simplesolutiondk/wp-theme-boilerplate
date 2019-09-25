@@ -1,0 +1,40 @@
+.banner-contact {
+  &-wrapper {
+    background-color: var(--faded-blue);
+    text-align: center;
+    padding-top: 40px;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    right: 50%;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+    flex-direction: column;
+  }
+
+  &-header {
+    font-size: 40px !important;
+    color: var(--white);
+    @extend .heading--small;
+    font-family: raleway-medium, 'sans-serif';
+    margin-bottom: 25px;
+  }
+
+  &-button {
+    background-color: var(--dark-blue-grey);
+    border: 2px solid var(--white);
+    width: 286px;
+    height: 50px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px !important;
+    font-family: raleway-reg, 'sans-serif';
+    margin-bottom: -25px;
+    @extend .font-size--extra-small;
+  }
+}

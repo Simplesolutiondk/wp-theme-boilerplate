@@ -1,0 +1,12 @@
+.alert {
+  color: var(--white);
+  position: relative;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid transparent;
+
+  &-danger {
+    color: #f9dfdf;
+    background-color: #e25f5f;
+    border-color: #e25f5f;
+  }
+}

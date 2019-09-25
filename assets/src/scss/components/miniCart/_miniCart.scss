@@ -1,0 +1,77 @@
+.app-mini-cart {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: 264px;
+
+  @media (min-width: $tablet) {
+    padding: 15px 25px;
+  }
+  border-right: 1px solid var(--white-four);
+  float: left;
+  height: 46px;
+  color: var(--warm-grey);
+
+  &:hover {
+    color: var(--greyish-blue);
+  }
+
+  > .status {
+    .basket {
+      position: relative;
+      @extend .font-size--extra-small;
+
+      .ico {
+        @media (min-width: $mobile) {
+          padding-right: 5px;
+        }
+      }
+      .text {
+        @media (max-width: $mobile) {
+          display: none;
+        }
+        &:after {
+          @extend .ico;
+          content: $ico-arrow-down;
+          font-size: 9px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+
+  .mini-cart {
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    top: 100%;
+    color: #000;
+    right: 0;
+    width: 25rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: ease-in-out 300ms;
+    transition: ease-in-out 300ms;
+    @import "parts/items";
+    @import "parts/summary";
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+      @extend .transition--primary;
+    }
+
+    .checkout-button {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}

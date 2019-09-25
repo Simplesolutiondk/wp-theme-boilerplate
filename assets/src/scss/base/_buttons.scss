@@ -1,0 +1,109 @@
+.btn {
+  text-transform: uppercase;
+  padding: 10px 25px;
+  color: var(--white);
+  display: inline-block;
+  user-select: none;
+  border-radius: 0;
+  text-align: center;
+  cursor: pointer;
+  font-family: opensans-reg, sans-serif;
+  letter-spacing: 0.9px;
+  font-size: 12px;
+
+  &--primary {
+    background-color: var(--greyish-blue);
+    border: 1px solid var(--greyish-blue);
+
+    &:disabled {
+      @extend .disabled;
+    }
+
+    &:hover {
+      background-color: var(--dark-blue-grey);
+      border: 1px solid var(--dark-blue-grey);
+      color: var(--white);
+    }
+  }
+
+  &--primary-outline {
+    background-color: transparent;
+    border: 1px solid var(--greyish-blue);
+    color: var(--greyish-blue);
+
+    &:disabled {
+      @extend .disabled;
+    }
+
+    &:hover {
+      background-color: var(--greyish-blue);
+      color: var(--white);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--faded-blue);
+    border: 1px solid var(--faded-blue);
+
+    &:disabled {
+      @extend .disabled;
+    }
+
+    &:hover {
+      background-color: var(--dark-blue-grey);
+      border: 1px solid var(--dark-blue-grey);
+    }
+  }
+
+  &--secondary-outline {
+    background-color: transparent;
+    border: 1px solid var(--faded-blue);
+    color: var(--faded-blue);
+
+    &:disabled {
+      @extend .disabled;
+    }
+
+    &:hover {
+      background-color: var(--faded-blue);
+      color: var(--white);
+    }
+  }
+
+  &--tertiary {
+    background: #999;
+    border: 1px solid #999;
+    font-size: 13px;
+
+    &:disabled {
+      @extend .disabled;
+    }
+
+    &:hover {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+
+  &--tertiary-outline {
+    background-color: transparent;
+    border: 1px solid var(--dark-blue-grey);
+    color: var(--dark-blue-grey);
+
+    &:disabled {
+      @extend .disabled;
+    }
+
+    &:hover {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+}
+
+button {
+  text-decoration: none;
+  transition: all 0.4s ease;
+  letter-spacing: normal
+}
+
