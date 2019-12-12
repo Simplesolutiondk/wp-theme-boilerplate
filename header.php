@@ -19,15 +19,6 @@ use ssoFramework\src\assets\Helper; ?>
         <link rel="profile" href="https://gmpg.org/xfn/11"/>
 	    <?php wp_enqueue_script("jquery"); ?>
         <?php wp_head(); ?>
-        <script>
-            var currentTermId = <?php echo Helper::getCurrentTermId(); ?>;
-            var url = "<?php echo get_site_url(); ?>";
-            var urlSlug = "<?php echo Helper::getCurrentSlug(); ?>";
-            var postid = <?php if (get_the_ID()){ echo get_the_ID(); } else { echo 'false'; } ?>;
-            var posttype = <?php if (get_the_ID()){ echo '"'.get_post_type(get_the_ID()).'"'; } else { echo '""'; } ?>;
-            var is_logged_in = <?php echo is_user_logged_in() ? 'true' : 'false'; ?>;
-            var current_user = <?php echo get_current_user_id(); ?>;
-        </script>
     </head>
 <body <?php body_class(); ?>>
     <header id="main-service">
