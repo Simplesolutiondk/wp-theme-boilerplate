@@ -1,0 +1,21 @@
+{
+  "name": "wp-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "A clean and basic wordpress theme boilerplate with no extra features.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/simple-solution/wp-theme-boilerplate.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "boilerplate"
+  ],
+  "author": "Simple Solution",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/simple-solution/wp-theme-boilerplate#readme"
+}
