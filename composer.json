@@ -3,13 +3,7 @@
     "description": "A Simple Solution Wordpress theme boilerplate",
     "type": "wordpress-theme",
     "version": "1.0.0",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Simple Solution",
-            "email": "kontakt@simplesolution.dk"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+    "suggest": {
+			"composer/installers": "~1.0"
+    }
 }
