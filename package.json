@@ -4,7 +4,7 @@
   "description": "A clean and basic wordpress theme boilerplate with no extra features.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tag-push": "sh autotagger.sh"
   },
   "repository": {
     "type": "git",
