@@ -4,66 +4,9 @@
  *  ##############
  */
 
-// Open Sans Light
-@font-face {
-  font-family: opensans-light;
-  src: url($opensans + "OpenSans-Light.ttf");
-  font-weight: 300;
-}
-
-// Open Sans Regular
-@font-face {
-  font-family: opensans-reg;
-  src: url($opensans + "OpenSans-Regular.ttf");
-  font-weight: 400;
-}
-
-// Open Sans Bold
-@font-face {
-  font-family: opensans-semibold;
-  src: url($opensans + "OpenSans-SemiBold.ttf");
-  font-weight: 600;
-}
-
-// Open Sans Bold
-@font-face {
-  font-family: opensans-bold;
-  src: url($opensans + "OpenSans-Bold.ttf");
-  font-weight: 600;
-}
-
-/* ######################################## */
-
-// Raleway Light
-@font-face {
-  font-family: raleway-light;
-  src: url($raleway + "Raleway-Light.ttf");
-  font-weight: 300;
-}
-
-// Raleway Regular
-@font-face {
-  font-family: raleway-reg;
-  src: url($raleway + "Raleway-Regular.ttf");
-  font-weight: 400;
-}
-
-// Raleway Medium
-@font-face {
-  font-family: raleway-medium;
-  src: url($raleway + "Raleway-Medium.ttf");
-  font-weight: 500;
-}
-
-// Raleway Bold
-@font-face {
-  font-family: raleway-bold;
-  src: url($raleway + "Raleway-Bold.ttf");
-  font-weight: 600;
-}
-
-//Icomoon
-@font-face {
-  font-family: Icomoon;
-  src: url($icomoon + "icomoon.ttf");
-}
+// Example:
+// @font-face {
+//   font-family: opensans-light;
+//   src: url($opensans + "OpenSans-Light.ttf");
+//   font-weight: 300;
+// }
