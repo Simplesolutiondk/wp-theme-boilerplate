@@ -8,8 +8,7 @@
  * @subpackage sso-deco
  * @since 1.0.0
  */
-
-use ssoFramework\src\assets\Helper; ?>
+?>
 
 <!doctype html>
 <html <?php language_attributes(); ?>>
