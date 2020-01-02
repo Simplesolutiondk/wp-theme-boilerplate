@@ -1,12 +1,13 @@
 {
     "name": "simple-solution/wp-theme-boilerplate",
-    "description": "Theme for WP Boilerplate 2.0",
+    "description": "A Simple Solution Wordpress theme boilerplate",
     "type": "wordpress-theme",
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
-            "name": "Vyacheslav Naumenko",
-            "email": "vna@sso-dev.ru"
+            "name": "Simple Solution",
+            "email": "kontakt@simplesolution.dk"
         }
     ],
     "minimum-stability": "dev",
