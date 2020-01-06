@@ -65,7 +65,7 @@
                     if(get_theme_mod( 'header_banner_title_setting' )){
                         echo get_theme_mod( 'header_banner_title_setting' );
                     }else{
-                        echo 'WordPress + Bootstrap';
+                        echo 'Simple Solution Boilerplate Theme';
                     }
                     ?>
                 </h1>

@@ -1,0 +1,24 @@
+{
+  "name": "wp-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a wordpress base theme for any landing-page, information-page, webshop (WooCommerce), etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/simple-solution/wp-theme-boilerplate.git"
+  },
+  "keywords": [
+    "wordpress",
+    "boilerplate",
+    "theme",
+    "woocommerce",
+    "landingpage",
+    "informationsite"
+  ],
+  "author": "Simple Solution P/S",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/simple-solution/wp-theme-boilerplate#readme"
+}
