@@ -4,7 +4,7 @@
   "description": "This is a wordpress base theme for any landing-page, information-page, webshop (WooCommerce), etc.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --watch --colors"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,19 @@
   ],
   "author": "Simple Solution P/S",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/simple-solution/wp-theme-boilerplate#readme"
+  "homepage": "https://bitbucket.org/simple-solution/wp-theme-boilerplate#readme",
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.5"
+  }
 }

@@ -23,3 +23,14 @@ HTTPS: ```git clone https://<your-bitbucket-username-here>@bitbucket.org/simple-
 
 - Open your terminal and cd into the wp-content/themes-folder and run either the command for SSH or HTTPS
   - This will download the newest version of the theme boilerplate from master.
+
+#### The Node Modules we use in the boiler
+
+- @babel/core — It provides basic core babel configuration
+- @babel/preset-env — It allows to work with latest ES6/ES7/ES8 features
+- @babel/preset-react — It allows to work with react syntax which is JSX
+- webpack - It will compile all our SASS and REACT.JS code into CSS and JavaScript ES5 for multi-browser support.
+- webpack-cli - Is the Command Line Interface (CLI) for webpack we then use to be able to run commands.
+- react - Just React.js
+- react-dom - Just the react-dom for rendering our react code.
+- babel-loader - Babel-loader will convert all ES6+ and React code to ES5 for multi-browser and backwards compatability support.
