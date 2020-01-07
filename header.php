@@ -16,10 +16,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/dist/build.style.css' ?>" />
+    <!-- Check wether  -->
+    <?php if ($_ENV["ENVIRONMENT"] === "development") { ?>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <?php } else { ?> 
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <?php } ?>
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+    <!--React Entry Point:START-->
+    <div id="app-root"></div>
+    <!--React Entry Point:END-->
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sso-default' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
