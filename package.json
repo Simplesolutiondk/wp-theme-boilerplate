@@ -4,7 +4,8 @@
   "description": "This is a wordpress base theme for any landing-page, information-page, webshop (WooCommerce), etc.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch --colors"
+    "start": "webpack --watch --colors",
+    "tag-push": "sh autotagger.sh"
   },
   "repository": {
     "type": "git",
