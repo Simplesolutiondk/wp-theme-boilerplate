@@ -1,4 +1,4 @@
-# WP Theme Boilerplate ```v0.0.1```
+# WP Theme Boilerplate ```v0.0.2```
 
 ## Including
 
@@ -26,11 +26,21 @@ HTTPS: ```git clone https://<your-bitbucket-username-here>@bitbucket.org/simple-
 
 #### The Node Modules we use in the boiler
 
-- @babel/core — It provides basic core babel configuration
-- @babel/preset-env — It allows to work with latest ES6/ES7/ES8 features
-- @babel/preset-react — It allows to work with react syntax which is JSX
-- webpack - It will compile all our SASS and REACT.JS code into CSS and JavaScript ES5 for multi-browser support.
-- webpack-cli - Is the Command Line Interface (CLI) for webpack we then use to be able to run commands.
-- react - Just React.js
-- react-dom - Just the react-dom for rendering our react code.
-- babel-loader - Babel-loader will convert all ES6+ and React code to ES5 for multi-browser and backwards compatability support.
+*We don't use React & ReactDOM from node_modules, but instead loads that in via. CDN*
+
+##### Dependencies
+
+- ```@babel/core``` — It provides basic core babel configuration
+- ```@babel/preset-env``` — It allows to work with latest ES6/ES7/ES8 features
+- ```@babel/preset-react``` — It allows to work with react syntax which is JSX
+- ```webpack-cli``` - Is the Command Line Interface (CLI) for webpack we then use to be able to run commands.
+
+##### devDependencies
+
+- ```babel-loader``` - Babel-loader will convert all ES6+ and React code to ES5 for multi-browser and backwards compatability support.
+- ```webpack``` - It will compile all our SASS and REACT.JS code into CSS and JavaScript ES5 for multi-browser support.
+- ```css-loader``` - Translates CSS into CommonJS.
+- ```node-sass``` - It natively compile .scss files to css.
+- ```sass-loader``` - Compiles SASS to CSS <- Makes use of node-sass module.
+- ```mini-css-extract-plugin``` - Extracts all CSS from the compiled .js file to .css.
+- ```optimize-css-assets-webpack-plugin``` - It will search for CSS assets during the Webpack build and will optimize \ minimize the CSS.
