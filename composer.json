@@ -1,14 +1,10 @@
 {
     "name": "simple-solution/wp-theme-boilerplate",
-    "description": "A wordpress boilerplate theme for WP Boilerplate 2.0",
+    "description": "A Simple Solution Wordpress theme boilerplate",
     "type": "wordpress-theme",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Simple Solution P/S",
-            "email": "hosting@simplesolution.dk"
-        }
-    ],
+    "suggest": {
+			"composer/installers": "~1.0"
+    },
     "minimum-stability": "dev",
-    "require": {}
+    "license": "proprietary"
 }

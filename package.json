@@ -1,0 +1,41 @@
+{
+  "name": "wp-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a wordpress base theme for any landing-page, information-page, webshop (WooCommerce), etc.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --watch --colors",
+    "tag-push": "sh autotagger.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/simple-solution/wp-theme-boilerplate.git"
+  },
+  "keywords": [
+    "wordpress",
+    "boilerplate",
+    "theme",
+    "woocommerce",
+    "landingpage",
+    "informationsite"
+  ],
+  "author": "Simple Solution P/S",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/simple-solution/wp-theme-boilerplate#readme",
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5"
+  }
+}
