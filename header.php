@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package WP_Bootstrap_Starter
+ * @package SSO_WP_Boilerplate_Theme
  */
 
 ?><!DOCTYPE html>

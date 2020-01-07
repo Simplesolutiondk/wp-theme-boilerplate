@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package WP_Bootstrap_Starter
+ * @package SSO_WP_Boilerplate_Theme
  */
 
 get_header(); ?>

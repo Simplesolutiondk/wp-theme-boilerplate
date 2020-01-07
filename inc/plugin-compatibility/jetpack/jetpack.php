@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package WP_Bootstrap_Starter
+ * @package SSO_WP_Boilerplate_Theme
  */
 
 /**

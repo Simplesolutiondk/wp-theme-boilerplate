@@ -2,7 +2,7 @@
 /**
  * WP Bootstrap Starter Theme Customizer
  *
- * @package WP_Bootstrap_Starter
+ * @package SSO_WP_Boilerplate_Theme
  */
 
 /**
