@@ -1,4 +1,4 @@
-# WP Theme Boilerplate ```v0.0.2```
+# WP Theme Boilerplate ```v1.0.4```
 
 ## Including
 
