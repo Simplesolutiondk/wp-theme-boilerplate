@@ -2,8 +2,9 @@
     "name": "simple-solution/wp-theme-boilerplate",
     "description": "A Simple Solution Wordpress theme boilerplate",
     "type": "wordpress-theme",
-    "version": "1.0.0",
     "suggest": {
 			"composer/installers": "~1.0"
-    }
+    },
+    "minimum-stability": "dev",
+    "license": "proprietary"
 }
