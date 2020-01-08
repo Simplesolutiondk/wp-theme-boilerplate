@@ -7,74 +7,76 @@
  * @package SSO_WP_Boilerplate_Theme
  */
 
+require_once __DIR__ . '/../../plugins/cmb2/init.php';
+
 define('theme_name', 'wp-theme-boilerplate');
 
-if ( ! function_exists( 'wp_bootstrap_starter_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
-function wp_bootstrap_starter_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on WP Bootstrap Starter, use a find and replace
-	 * to change 'sso-default' to the name of your theme in all the template files.
-	 */
-	load_theme_textdomain( 'sso-default', get_template_directory() . '/languages' );
+if ( ! function_exists( 'wp_bootstrap_starter_setup' ) ) {
+    /**
+     * Sets up theme defaults and registers support for various WordPress features.
+     *
+     * Note that this function is hooked into the after_setup_theme hook, which
+     * runs before the init hook. The init hook is too late for some features, such
+     * as indicating support for post thumbnails.
+     */
+    function wp_bootstrap_starter_setup() {
+        /*
+        * Make theme available for translation.
+        * Translations can be filed in the /languages/ directory.
+        * If you're building a theme based on WP Bootstrap Starter, use a find and replace
+        * to change 'sso-default' to the name of your theme in all the template files.
+        */
+        load_theme_textdomain( 'sso-default', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+        // Add default posts and comments RSS feed links to head.
+        add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
+        /*
+        * Let WordPress manage the document title.
+        * By adding theme support, we declare that this theme does not use a
+        * hard-coded <title> tag in the document head, and expect WordPress to
+        * provide it for us.
+        */
+        add_theme_support( 'title-tag' );
 
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-	 */
-	add_theme_support( 'post-thumbnails' );
+        /*
+        * Enable support for Post Thumbnails on posts and pages.
+        *
+        * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+        */
+        add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'sso-default' ),
-	) );
+        // This theme uses wp_nav_menu() in one location.
+        register_nav_menus( array(
+            'primary' => esc_html__( 'Primary', 'sso-default' ),
+        ) );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'comment-form',
-		'comment-list',
-		'caption',
-	) );
+        /*
+        * Switch default core markup for search form, comment form, and comments
+        * to output valid HTML5.
+        */
+        add_theme_support( 'html5', array(
+            'comment-form',
+            'comment-list',
+            'caption',
+        ) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'wp_bootstrap_starter_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+        // Set up the WordPress core custom background feature.
+        add_theme_support( 'custom-background', apply_filters( 'wp_bootstrap_starter_custom_background_args', array(
+            'default-color' => 'ffffff',
+            'default-image' => '',
+        ) ) );
 
-	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+        // Add theme support for selective refresh for widgets.
+        add_theme_support( 'customize-selective-refresh-widgets' );
 
-    function wp_boostrap_starter_add_editor_styles() {
-        add_editor_style( 'custom-editor-style.css' );
+        function wp_boostrap_starter_add_editor_styles() {
+            add_editor_style( 'custom-editor-style.css' );
+        }
+        add_action( 'admin_init', 'wp_boostrap_starter_add_editor_styles' );
+
     }
-    add_action( 'admin_init', 'wp_boostrap_starter_add_editor_styles' );
-
 }
-endif;
 add_action( 'after_setup_theme', 'wp_bootstrap_starter_setup' );
 
 
@@ -302,3 +304,57 @@ require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibili
 if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
 }
+
+/**
+ * CMB2 Test - Check if CMB2 is reachable from the plugin to code.
+ */
+function cmb2_sample_metaboxes() {
+    	/**
+	 * Initiate the metabox
+	 */
+	$cmb = new_cmb2_box( array(
+		'id'            => 'test_metabox',
+		'title'         => __( 'Test Metabox', 'cmb2' ),
+		'object_types'  => array( 'page', ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		// 'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Regular text field
+	$cmb->add_field( array(
+		'name'       => __( 'Test Text', 'cmb2' ),
+		'desc'       => __( 'field description (optional)', 'cmb2' ),
+		'id'         => 'yourprefix_text',
+		'type'       => 'text',
+		'show_on_cb' => 'cmb2_hide_if_no_cats', // function should return a bool value
+		// 'sanitization_cb' => 'my_custom_sanitization', // custom sanitization callback parameter
+		// 'escape_cb'       => 'my_custom_escaping',  // custom escaping callback parameter
+		// 'on_front'        => false, // Optionally designate a field to wp-admin only
+		// 'repeatable'      => true,
+	) );
+
+	// URL text field
+	$cmb->add_field( array(
+		'name' => __( 'Website URL', 'cmb2' ),
+		'desc' => __( 'field description (optional)', 'cmb2' ),
+		'id'   => 'yourprefix_url',
+		'type' => 'text_url',
+		// 'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'), // Array of allowed protocols
+		// 'repeatable' => true,
+	) );
+
+	// Email text field
+	$cmb->add_field( array(
+		'name' => __( 'Test Text Email', 'cmb2' ),
+		'desc' => __( 'field description (optional)', 'cmb2' ),
+		'id'   => 'yourprefix_email',
+		'type' => 'text_email',
+		// 'repeatable' => true,
+	) );
+
+	// Add other metaboxes as needed
+}
+add_action( 'cmb2_admin_init', 'cmb2_sample_metaboxes' );
