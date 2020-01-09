@@ -1,0 +1,30 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b2f85f73264bc5a2e893c270b8a74b96",
+    "packages": [
+        {
+            "name": "simple-solution/wp-interaction-framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:simple-solution/wp-interaction-framework.git",
+                "reference": "3dcd398609cc310e65c8f5c5880644571de2b762"
+            },
+            "type": "package",
+            "description": "Framework for WP Boilerplate 2.0",
+            "time": "2020-01-03T14:21:18+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
