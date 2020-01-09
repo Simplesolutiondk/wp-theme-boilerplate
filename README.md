@@ -1,16 +1,17 @@
-# WP Theme Boilerplate ```v1.0.0```
+# WP Theme Boilerplate ```v1.0.3```
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Including](#including)
-- [Installation of the theme](#installation-of-the-theme)
-  - [Method 1 - Without Git](#method-1---without-git)
-  - [Method 2 - With Git](#method-2---with-git)
-    - [The Node Modules we use in the boiler](#the-node-modules-we-use-in-the-boiler)
-      - [Dependencies](#dependencies)
-      - [devDependencies](#devdependencies)
+- [WP Theme Boilerplate v1.0.3](#wp-theme-boilerplate-v103)
+  - [Including](#including)
+  - [Installation of the theme](#installation-of-the-theme)
+    - [Method 1 - Without Git](#method-1---without-git)
+    - [Method 2 - With Git](#method-2---with-git)
+      - [The Node Modules we use in the boiler](#the-node-modules-we-use-in-the-boiler)
+        - [Dependencies](#dependencies)
+        - [devDependencies](#devdependencies)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
