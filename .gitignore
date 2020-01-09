@@ -2,6 +2,11 @@
 # Created by https://www.gitignore.io/api/node,dotenv,wordpress
 # Edit at https://www.gitignore.io/?templates=node,dotenv,wordpress
 
+# Editor
+.idea/
+.vscode/
+
+
 ### Node ###
 # Logs
 logs
@@ -10,10 +15,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+setup-log.log
 
 # Temps
 temp/
 temps/
+.DS_Store
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
