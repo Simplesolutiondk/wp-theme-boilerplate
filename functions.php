@@ -7,7 +7,11 @@
  * @package SSO_WP_Boilerplate_Theme
  */
 
+require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/../../plugins/cmb2/init.php';
+
+// Loads the SSO WP Interaction Framework for theme.
+\SimpleSolution\WpInteractionFramework\Theme\Init::load();
 
 define('theme_name', 'wp-theme-boilerplate');
 
@@ -269,7 +273,7 @@ function wp_bootstrap_starter_password_form() {
     </form>';
     return $o;
 }
-add_filter( 'the_password_form', 'wp_bootstrap_starter_password_form' );
+// add_filter( 'the_password_form', 'wp_bootstrap_starter_password_form' );
 
 
 
