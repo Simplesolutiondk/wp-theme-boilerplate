@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "317eb53232e688bd931023be1fd4184b",
-    "packages": [
+    "content-hash": "9886c758581b2f174b8f37eb917188f2",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "simple-solution/wp-interaction-framework",
             "version": "1.0.9",
@@ -30,7 +31,6 @@
             "time": "2020-01-24T10:59:07+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
