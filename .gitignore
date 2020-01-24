@@ -117,7 +117,7 @@ wp-content/*
 wp-content/plugins/
 wp-content/themes/
 wp/
-vendor/
+!vendor/
 
 # ignore these plugins
 # example: wp-content/plugins/hello.php
