@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "simple-solution/wp-interaction-framework": ">=1.0.0"
+        "simple-solution/wp-interaction-framework": "1.0.9"
     },
     "autoload": {
         "psr-4": {
