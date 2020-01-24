@@ -4,16 +4,16 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9886c758581b2f174b8f37eb917188f2",
+    "content-hash": "3a2df6b8968d82d57fe7ebf8c2633705",
     "packages": [],
     "packages-dev": [
         {
             "name": "simple-solution/wp-interaction-framework",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:simple-solution/wp-interaction-framework.git",
-                "reference": "03c2300fa1b1f603035c3eb78416abc3b8094fa5"
+                "reference": "9304e90eca11c8926f118ceb46ab6a85b46b9c62"
             },
             "suggest": {
                 "composer/installers": "~1.0"
@@ -28,7 +28,7 @@
                 "proprietary"
             ],
             "description": "Framework for WP Boilerplate 2.0",
-            "time": "2020-01-24T10:59:07+00:00"
+            "time": "2020-01-24T11:35:30+00:00"
         }
     ],
     "aliases": [],
