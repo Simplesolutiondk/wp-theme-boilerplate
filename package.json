@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch --colors",
-    "tag-push": "sh autotagger.sh"
+    "tag-push:tags": " git push --tags",
+    "tag-push:patch": "npm version patch && npm run tag-push:tags",
+    "tag-push:minor": "npm version minor && npm run tag-push:tags",
+    "tag-push:major": "npm version major && npm run tag-push:tags"
   },
   "repository": {
     "type": "git",
