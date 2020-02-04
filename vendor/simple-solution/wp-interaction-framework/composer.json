@@ -1,0 +1,14 @@
+{
+    "name": "simple-solution/wp-interaction-framework",
+    "description": "Framework for WP Boilerplate 2.0",
+    "license": "proprietary",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "SimpleSolution\\WpInteractionFramework\\": "src/"
+        }
+    },
+    "suggest": {
+        "composer/installers": "~1.0"
+    }
+}
