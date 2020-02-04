@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/node,dotenv,wordpress
 # Edit at https://www.gitignore.io/?templates=node,dotenv,wordpress
 
+!vendor/*
+
 # Editor
 .idea/
 .vscode/
