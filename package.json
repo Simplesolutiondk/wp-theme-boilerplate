@@ -1,6 +1,6 @@
 {
   "name": "wp-theme-boilerplate",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "This is a wordpress base theme for any landing-page, information-page, webshop (WooCommerce), etc.",
   "main": "index.js",
   "scripts": {
