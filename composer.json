@@ -9,7 +9,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@bitbucket.org:simple-solution/wp-interaction-framework.git"
+            "url": "https://bitbucket.org/simple-solution/wp-interaction-framework.git"
         }
     ],
     "require-dev": {

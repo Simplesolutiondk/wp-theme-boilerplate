@@ -1,0 +1,37 @@
+[
+    {
+        "name": "simple-solution/wp-interaction-framework",
+        "version": "1.0.10",
+        "version_normalized": "1.0.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://bitbucket.org/simple-solution/wp-interaction-framework.git",
+            "reference": "9304e90eca11c8926f118ceb46ab6a85b46b9c62"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://bitbucket.org/simple-solution/wp-interaction-framework/get/9304e90eca11c8926f118ceb46ab6a85b46b9c62.zip",
+            "reference": "9304e90eca11c8926f118ceb46ab6a85b46b9c62",
+            "shasum": ""
+        },
+        "suggest": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2020-01-24T11:35:30+00:00",
+        "type": "package",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "SimpleSolution\\WpInteractionFramework\\": "src/"
+            }
+        },
+        "license": [
+            "proprietary"
+        ],
+        "description": "Framework for WP Boilerplate 2.0",
+        "homepage": "https://bitbucket.org/simple-solution/wp-interaction-framework",
+        "support": {
+            "source": "https://bitbucket.org/simple-solution/wp-interaction-framework/src/9304e90eca11c8926f118ceb46ab6a85b46b9c62/?at=1.0.10"
+        }
+    }
+]
