@@ -17,8 +17,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/dist/build.style.css' ?>" />
-    <!-- Check wether  -->
-    <?php if ($_ENV["ENVIRONMENT"] === "development") { ?>
+    
+    <?php 
+        // Checks wether or not we're in development, to determin if we need to load in the development or production build of react@v16
+        if ( isset($_ENV["ENVIRONMENT"]) && !empty($_ENV["ENVIRONMENT"]) && $_ENV["ENVIRONMENT"] === "development") { 
+    ?>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <?php } else { ?> 
